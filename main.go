@@ -30,7 +30,8 @@ func homeLink(w http.ResponseWriter, r *http.Request) {
 }
 
 func getAllEvents(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(events)
+	fmt.Fprintf(w, "Showing allEvents")
+	//json.NewEncoder(w).Encode(events)
 }
 
 
